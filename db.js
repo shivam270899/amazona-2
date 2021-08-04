@@ -10,4 +10,4 @@ db.on('connected', () => console.log("mongodb connection successfull"));
 
 db.on('error', () => console.log("mongodb connection fail"));
 
-module.exports = mongoose;
+module.exports = mongoose; 
