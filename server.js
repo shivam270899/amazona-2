@@ -1,5 +1,5 @@
 const express = require("express");
-const mongoose = require("mongoose");
+const db = require('./db');
 //const SocketIO = require("socket.io");
 //const http = require("http");
 const dotenv = require('dotenv');
@@ -11,13 +11,7 @@ const path = require("path");
 
 dotenv.config();
 
-async()=>{
-   await mongoose.connect(process.env.MONGODB_URL ||  'mongodb://localhost/amazona',{
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true
-})
-}
+
 
 
 
